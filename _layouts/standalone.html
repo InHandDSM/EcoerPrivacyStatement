@@ -27,11 +27,12 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="site">
   <div class="title">
-    <a href="/">ZYB's Blog Test</a>
-    <a class="extra" href="/">home</a>
+    {{ page.title }}
   </div>
 
-  {{ content }}
+	<div id="standalone">
+	{{ content }}
+	</div>
 
 <!--
   <div class="footer">
