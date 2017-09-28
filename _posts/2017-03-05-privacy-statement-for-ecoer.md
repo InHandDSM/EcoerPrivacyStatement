@@ -97,3 +97,7 @@ We may share, as described in this Privacy Statement, information with our affil
 Please note that this Privacy Statement may change from time to time. We will provide notice of any changes on the website or by contacting you.
 
 If you have any questions, please contact us at support@ecoer.com.
+
+**CHANGES TO PRIVACY POLICY**:
+
+Please note that this privacy policy may change from time to time. We will provide notice of any changes on the website or by contacting you.
