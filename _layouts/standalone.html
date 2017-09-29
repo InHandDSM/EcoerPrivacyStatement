@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="renderer" content="webkit">
    <title>{{ page.title }}</title>
    <meta name="author" content="Tom Preston-Werner" />
@@ -14,9 +14,11 @@
    <link rel="stylesheet" href="{{ site.github.url }}/css/syntax.css" type="text/css" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="{{ site.github.url }}/css/screenCustom.css" type="text/css" media="screen, projection" />
+   <!--<link rel="stylesheet" href="{{ site.github.url }}/css/screenCustom.css" type="text/css" media="screen, projection" />-->
+   <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.min.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="{{ site.github.url }}/css/standalone.css" type="text/css" media="screen, projection" />
 
-   <!-- Typekit -->
+    <!--Typekit -->
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
@@ -27,42 +29,48 @@
 var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="privacy">
+                <div class="title">
+                    {{ page.title }}
+                </div>
 
-<div class="site">
-  <div class="title">
-    {{ page.title }}
-  </div>
-
-	<div id="standalone">
-	{{ content }}
-	</div>
-<!--
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Tom Preston-Werner
-        <br />
-        Cofounder of
-          <a href="https://codestarter.org/">Codestarter</a>,
-          <a href="https://github.com/">GitHub</a>
-        <br />
-        tom@mojombo.com
-      </p>
+                <div id="standalone">
+                    {{ content }}
+                </div>
+                <!--
+                  <div class="footer">
+                    <div class="contact">
+                      <p>
+                        Tom Preston-Werner
+                        <br />
+                        Cofounder of
+                          <a href="https://codestarter.org/">Codestarter</a>,
+                          <a href="https://github.com/">GitHub</a>
+                        <br />
+                        tom@mojombo.com
+                      </p>
+                    </div>
+                    <div class="contact">
+                      <p>
+                        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
+                        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
+                      </p>
+                    </div>
+                    <div class="rss">
+                      <a href="http://feeds.feedburner.com/tom-preston-werner">
+                        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+                      </a>
+                    </div>
+                  </div>
+                -->
+            </div>
+        </div>
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
-        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/tom-preston-werner">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
--->
 </div>
+
 <!--
 <a href="http://github.com/mojombo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
